@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  app:
+    container_name: esjay.github.io
+    build:
+      context: .    
+    volumes:
+      - .:/core
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    image: app:react
+    command: npm start
+    env_file: 
+      - .env
