@@ -1,14 +1,14 @@
-import React from 'react';
 import './App.css';
+import Navigation from './Navigation/Navigation';
+import { SimpleNavigation } from './Navigation';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Esjay's Homepage<br/><br/>Coming soon... (if I find some time)
-        </p>
-      </header>
+        <SimpleNavigation />
+        <section className="landing">
+            <h1>Esjay's Homepage</h1>
+        </section>
     </div>
   );
 }

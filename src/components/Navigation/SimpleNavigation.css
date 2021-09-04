@@ -1,0 +1,17 @@
+nav {
+    height: calc(48px + 4rem);
+    background: var(--dark);
+    padding-left: 6em;
+}
+
+.project-logo {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.project-logo h5 {
+    margin-bottom: 0px;
+    font-size: calc(24px + 0.5rem);
+    
+}
