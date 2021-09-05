@@ -1,13 +1,14 @@
 import './App.css';
-import Navigation from './Navigation/Navigation';
-import { SimpleNavigation } from './Navigation';
+import { SimpleNavigation, Navigation } from './Navigation';
+import { Homepage } from './Homepage';
 
 function App() {
   return (
     <div className="App">
         <SimpleNavigation />
-        <section className="landing">
-            <h1>Esjay's Homepage</h1>
+        <div className="navigation-padding"></div>
+        <section className="content">
+          <Homepage />
         </section>
     </div>
   );

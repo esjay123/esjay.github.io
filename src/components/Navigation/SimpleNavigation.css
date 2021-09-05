@@ -1,10 +1,25 @@
 nav {
     height: calc(48px + 4rem);
     background: var(--dark);
-    padding-left: 6em;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+nav.onBottom {
+    background: none;
+    transition: 0.5s ease-in-out;
+}
+
+.navigation-padding {
+    scroll-snap-align: start;
+    width: 100%;
+    height: calc(48px + 4rem);
+    background-color: var(--dark);
 }
 
 .project-logo {
+    margin-left: calc(24px + 2vw);
     display: flex;
     height: 100%;
     align-items: center;
@@ -13,5 +28,4 @@ nav {
 .project-logo h5 {
     margin-bottom: 0px;
     font-size: calc(24px + 0.5rem);
-    
 }
