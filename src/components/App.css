@@ -1,10 +1,12 @@
 :root {
-  --dark: #403F4C;
-  --red: #E84855;
-  --yellow: #F9DC5C;
-  --azure: #3185FC;
-  --pink: #EFBCD5;
+  --first: #4C5B61;
+  --second: #829191;
+  --third: #C5C5C5;
+  --fourth: #949B96;
+  --fifth: #2C423F;
+
 }
+
 
 html {
   font-size: 1vw;
@@ -43,23 +45,64 @@ body {
 
 .page__subsection {
   width: 50%;
-  height: 100vh;
+  height: 70vh;
 }
 
 .pink_background {
-  background-color: var(--pink);
+  background-color: var(--fifth);
 }
 
 .red_background {
-  background-color: var(--red);
+  background-color: var(--second);
 }
 
 .yellow_background {
-  background-color: var(--yellow);
+  background-color: var(--third);
 }
 
 .blue_background {
-  background-color: var(--azure);
+  background-color: var(--fourth);
+}
+
+.inner-content {
+  margin-top: 1em;
+  padding: 12rem;
+  padding-right:5em;
+  padding-top: 4em;
+}
+
+.page__title h1 {
+  font-size: calc(24px + 3em);
+  color: rgba(0,0,0,0);
+  -webkit-text-stroke: 1px white;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: 900;
+}
+
+.page__subtitle h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 105%;
+}
+@media screen and (max-width: 930px) {
+  img {
+    margin-top: 6em;
+    height:80%;
+  }
 }
 
 @media screen and (max-width: 750px) {

@@ -1,6 +1,6 @@
 nav {
     height: calc(48px + 4rem);
-    background: var(--dark);
+    background: var(--first);
     position: fixed;
     width: 100%;
     z-index: 9999;
@@ -15,7 +15,7 @@ nav.onBottom {
     scroll-snap-align: start;
     width: 100%;
     height: calc(48px + 4rem);
-    background-color: var(--dark);
+    background-color: var(--second);
 }
 
 .project-logo {
